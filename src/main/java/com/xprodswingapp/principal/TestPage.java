@@ -158,7 +158,9 @@ public class TestPage extends javax.swing.JFrame {
         
         
         txtBILL.setText(txtBILL.getText() + "                                           FACTURE XPROD                               \n");
-        
+                txtBILL.setText(txtBILL.getText() + "                                           FACTURE XPROD                               \n");
+
+                
         txtBILL.setText(txtBILL.getText() + "********************************************************************************\n");
         
         txtBILL.setText(txtBILL.getText() + "\t"+"\t"+"Prénom du client:"+"\n");
@@ -202,6 +204,7 @@ public class TestPage extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new TestPage().setVisible(true);
+                
             }
         });
     }
