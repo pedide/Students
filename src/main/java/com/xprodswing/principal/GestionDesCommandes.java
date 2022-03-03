@@ -683,70 +683,7 @@ public class GestionDesCommandes extends javax.swing.JFrame {
     private void btnVALIDERLACOMMANDEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVALIDERLACOMMANDEActionPerformed
                 // Je récupère les infos des champs de mes champs de texte
       
-   // Je récupère les infos des champs de mes champs de texte
-        String nomCommande = txtNOMCOMMANDE.getText();
-        
-        select commandes.column 1,clients:column1, clients:column2, produits: column1;
-      from commandes left Joins
-               
-    
-    int IDPRODUIT = InPRODUIT.getText();
-           String ref = txtREFPRODUIT.getText();
-           String designation = txtDESIGNATIONPRODUIT.getText();
-            String descriptifProduit = txtDESCRIPTIFPRODUIT.getText();
-            String prixUHT =txtPRIXUHTPRODUIT.getText();
-            String qte = txtQTEPRODUIT.getText();
-            String fraisDePort = txtFRAISPORT.getText();
-           String prixTVA = txtTVAPRODUIT.getText();
-            
-            
-           
-           
-           
-           
-           
-       
-          
-
-        
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");  //Enregistrer le driver JDBC dans ma classe
-            con = DriverManager.getConnection("jdbc:mysql://localhost/xproddb", "root","");
-           System.out.println("connection réussie");
-            pst = con.prepareStatement("INSERT INTO commandes (IDCOMMANDE, PRIXUHT, QTE, PRIXTHT, FRAISDEPORT, PRIXTVA, PRIXTTC)VALUES (?,?,?,?,?,?,?)");
-       
-           
-          
-            pst.setString(1, prixUHT);
-             pst.setString(2, qte);
-          pst.setString(3, prixUHT);
-          pst.setString(4, fraisDePort);
-          pst.setString(5, prixTVA);
-            
-            
-            
-           
-            
-            pst.executeUpdate();
-         
-            JOptionPane.showMessageDialog(this, "Données enregistrées");
-            
-            //Je vide le contenu des champs remplis
-     
-           txtFRAISPORT.setText("");
-            txtREFPRODUIT.setText("");
-            
-           
-           
-        }catch (SQLException ex) {
-            Logger.getLogger(xprodDesktopAdministrateur.class.getName()).log(Level.SEVERE, null, ex);}
-        
-      
-         catch (ClassNotFoundException ex) {
-            Logger.getLogger(xprodDesktopAdministrateur.class.getName()).log(Level.SEVERE, null, ex);
-        
-            
-        }
+ 
 
     }//GEN-LAST:event_btnVALIDERLACOMMANDEActionPerformed
 
