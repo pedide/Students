@@ -31,6 +31,7 @@ com\xprodswing\principal\Client$5.class
 com\xprodswing\principal\XprodDesktopAdmin$6.class
 com\xprodswing\principal\GestionDesCommandes$12.class
 com\xprodswing\principal\XprodDesktopClient$7.class
+com\xprodswing\principal\GestionDesCommandes$15.class
 com\xprodswing\principal\Register$6.class
 com\xprodswing\principal\Commande$6.class
 com\xprodswing\principal\Fournisseur$7.class
@@ -47,6 +48,7 @@ com\xprodswing\principal\XprodDesktopAdmin$2.class
 com\xprodswing\principal\Commande$5.class
 com\xprodswing\principal\GestionDesCommandes.class
 com\xprodswing\principal\XprodDesktopClient$6.class
+com\xprodswing\principal\GestionDesCommandes$14.class
 com\xprodswing\principal\Client.class
 com\xprodswing\principal\XprodDesktopAdmin$11.class
 com\xprodswing\principal\Fournisseur$1.class

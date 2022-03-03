@@ -342,6 +342,11 @@ public class XprodDesktopAdmin extends javax.swing.JFrame {
         jMenu5.add(jMenuItem1ManageUser);
 
         jMenuItem1GestionClient.setText("Gestion des clients");
+        jMenuItem1GestionClient.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1GestionClientActionPerformed(evt);
+            }
+        });
         jMenu5.add(jMenuItem1GestionClient);
 
         jMenuBar1.add(jMenu5);
@@ -593,6 +598,12 @@ public class XprodDesktopAdmin extends javax.swing.JFrame {
         GestionDesCommandes newGest = new GestionDesCommandes();
         newGest.setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem1GestionClientActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1GestionClientActionPerformed
+        // TODO add your handling code here:
+        Client newClient = new Client();
+        newClient.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1GestionClientActionPerformed
 
     
     
