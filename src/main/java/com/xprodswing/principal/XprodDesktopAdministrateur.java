@@ -47,8 +47,6 @@ public class XprodDesktopAdministrateur extends javax.swing.JFrame {
     
     
     
-//private void btnADDActionPerformed(java.awt.event.ActionEvent evt) {}
-
         
         
     @SuppressWarnings("unchecked")

@@ -34,9 +34,7 @@ PreparedStatement pst;
         
     }
 
-   
-    private void btnADDActionPerformed(java.awt.event.ActionEvent evt) {}
-    
+       
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -188,18 +186,18 @@ PreparedStatement pst;
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGap(58, 58, 58)
                         .addComponent(jLabel11)
                         .addGap(66, 66, 66)
                         .addComponent(txtMAILCLIENT, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
+                        .addGap(144, 144, 144)
                         .addComponent(btnADDCLIENT)
-                        .addGap(44, 44, 44)
+                        .addGap(32, 32, 32)
                         .addComponent(btnUpdateClient)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
                         .addComponent(btnDeleteClient)))
                 .addContainerGap(214, Short.MAX_VALUE))
         );
@@ -445,7 +443,6 @@ PreparedStatement pst;
         // TODO add your handling code here:
     }//GEN-LAST:event_txtCPCLIENTActionPerformed
 
- 
     private void tableUpdate() {
         try {
             int cpt;
@@ -471,7 +468,7 @@ PreparedStatement pst;
                 vect.add(rs.getString("cpClient"));
                 vect.add(rs.getString("villeClient"));
                 vect.add(rs.getString("paysClient"));
-                vect.add(rs.getString("telClour"));
+                vect.add(rs.getString("telClient"));
                 vect.add(rs.getString("mobileClient"));
                 vect.add(rs.getString("mailClient"));
                 
@@ -543,10 +540,10 @@ PreparedStatement pst;
     tableUpdate();
 
 
-        } catch (SQLException ex) {
-                Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+                Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
         
     }//GEN-LAST:event_btnADDCLIENTActionPerformed
@@ -580,8 +577,8 @@ PreparedStatement pst;
             DefaultTableModel dtm = (DefaultTableModel)TableCLIENTS.getModel();
             int selectedIndex = TableCLIENTS.getSelectedRow();
         
-        
-            int idProd = Integer.parseInt(dtm.getValueAt(selectedIndex, 0).toString());
+        try {
+            int idClient = Integer.parseInt(dtm.getValueAt(selectedIndex, 0).toString());
             
             
             String prenomClient = txtPRENOMCLIENT.getText();
@@ -596,10 +593,10 @@ PreparedStatement pst;
             
             
         
-            try{
+            
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost/xprodddb","root","");
-            pst = con.prepareStatement("update clients set PRENOMCLIENT=?, NOMCLIENT=?, ADRESSECLIENT=?, CPCLIENT=?, VILLECLIENT =?, PAYSCLIENT=?, TELCLIENT=?, MOBILECLIENT=?, MAILCLIENT=? where IDCLIENT=?");
+            pst = con.prepareStatement("update clients set PRENOMCLIENT=?, NOMCLIENT=?, ADRESSECLIENT=?, CPCLIENT=?, VILLECLIENT =?, PAYSCLIENT=?, TELCLIENT=?, MOBILE=?, MAILCLIENT=? where IDCLIENT=?");
             
             pst.setString(1, prenomClient);
             pst.setString(2, nomClient);
@@ -657,6 +654,16 @@ DefaultTableModel dtm = (DefaultTableModel)TableCLIENTS.getModel();
         DefaultTableModel dtm = (DefaultTableModel)TableCLIENTS.getModel();
         int selectedIndex = TableCLIENTS.getSelectedRow();
         
+        String prenomClient = txtPRENOMCLIENT.getText();
+            String nomClient = txtNOMCLIENT.getText();
+            String adresseClient = txtADRESSECLIENT.getText();
+            String cpClient = txtCPCLIENT.getText();
+            String villeClient = txtVILLECLIENT.getText();
+            String paysClient = txtPAYSCLIENT.getText();
+            String telClient = txtTELCLIENT.getText();
+            String mobileClient = txtMOBILECLIENT.getText();
+            String mailClient = txtMAILCLIENT.getText();
+            
         int idProduit = Integer.parseInt(dtm.getValueAt(selectedIndex, 0).toString());
         int dialogResult = JOptionPane.showConfirmDialog(null, "Voulez-vous supprimer cette donnée ?","Attention",JOptionPane.YES_NO_OPTION);
         
@@ -668,8 +675,17 @@ DefaultTableModel dtm = (DefaultTableModel)TableCLIENTS.getModel();
                 
                 pst = con.prepareStatement("delete from produit where idClient=?");
                 
-                pst.setInt(1, idProduit);
-                pst.executeUpdate();
+            pst.setString(1, prenomClient);
+            pst.setString(2, nomClient);
+            pst.setString(3, adresseClient);
+            pst.setString(4, cpClient);
+            pst.setString(5, villeClient);
+            pst.setString(6, paysClient);
+            pst.setString(7, telClient);
+            pst.setString(8, mobileClient);
+            pst.setString(9, mailClient);
+                
+            pst.executeUpdate();
                 
                 JOptionPane.showMessageDialog(this, "Donnée supprimée !");
                 
