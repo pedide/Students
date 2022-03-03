@@ -9,7 +9,7 @@ import java.awt.Frame;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class TestPage extends javax.swing.JFrame {
 

@@ -6,7 +6,7 @@ package com.xprodswingapp.principal.model;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class Users {
     

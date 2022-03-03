@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class GestionDesCommandes extends javax.swing.JFrame {
 

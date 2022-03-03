@@ -17,7 +17,7 @@ import com.xprodswingapp.principal.model.Users;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class UserDAO {
     

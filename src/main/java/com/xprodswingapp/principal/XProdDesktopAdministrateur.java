@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class XProdDesktopAdministrateur extends javax.swing.JFrame {
 

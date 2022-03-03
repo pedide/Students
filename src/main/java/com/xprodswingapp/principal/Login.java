@@ -15,7 +15,7 @@ import com.xprodswingapp.principal.model.DataEncryption;
 import com.xprodswingapp.principal.model.Users;
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class Login extends javax.swing.JFrame {
 

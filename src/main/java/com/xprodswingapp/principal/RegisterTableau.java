@@ -21,7 +21,7 @@ import com.xprodswingapp.principal.model.DataEncryption;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class RegisterTableau extends javax.swing.JFrame {
 

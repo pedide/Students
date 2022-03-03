@@ -10,7 +10,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class DataEncryption {
     

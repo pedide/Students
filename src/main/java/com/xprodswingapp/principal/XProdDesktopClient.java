@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author prisk
+ * @author Priska DELORME
  */
 public class XProdDesktopClient extends javax.swing.JFrame {
 
