@@ -1,0 +1,62 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/Axel/.m2/repository/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar;C:/Users/Axel/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar;C:/Users/Axel/.m2/repository/org/netbeans/external/AbsoluteLayout/RELEASE126/AbsoluteLayout-RELEASE126.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'XprodSwing 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'XprodSwing 1.0-SNAPSHOT API'
+com.xprodswing.principal
+com.xprodswing.principal.dao
+com.xprodswing.princpal.model
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/Commandes.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/dao/UserDao.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/Fournisseurs.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/ListeClient.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/Login.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/Register.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/XprodDesktopAdmin.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/principal/XprodDesktopClient.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/princpal/model/DataEncryption.java'
+'C:/Users/Axel/Documents/NetBeansProjects/XprodSwing/src/main/java/com/xprodswing/princpal/model/Users.java'
+C:\Users\Axel\.m2\repository\mysql\mysql-connector-java\8.0.28\mysql-connector-java-8.0.28.jar = 1645090021880
+C:\Users\Axel\.m2\repository\com\google\protobuf\protobuf-java\3.11.4\protobuf-java-3.11.4.jar = 1645090022380
+C:\Users\Axel\.m2\repository\org\netbeans\external\AbsoluteLayout\RELEASE126\AbsoluteLayout-RELEASE126.jar = 1645523329870
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\src\main\java = 1645016791984
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\allclasses-index.html = 1646131804099
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\allpackages-index.html = 1646131804101
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\element-list = 1646131803962
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\help-doc.html = 1646131804118
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\index-all.html = 1646131804114
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\index.html = 1646131804088
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\jquery-ui.overrides.css = 1646131804143
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\member-search-index.js = 1646131804104
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\module-search-index.js = 1646131804102
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\overview-summary.html = 1646131804115
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\overview-tree.html = 1646131804085
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\package-search-index.js = 1646131804103
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\script.js = 1646131804121
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\search.js = 1646131804123
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\serialized-form.html = 1646131804050
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\stylesheet.css = 1646131804120
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\tag-search-index.js = 1646131804104
+C:\Users\Axel\Documents\NetBeansProjects\XprodSwing\target\apidocs\type-search-index.js = 1646131804103
